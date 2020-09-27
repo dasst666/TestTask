@@ -1,0 +1,556 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  color: #544837;
+  background: #fff;
+  font-size: 16px;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+/*************************************************************** general text and header styles  */
+.general__header {
+  font-size: 36px;
+  color: #2f281e;
+  font-weight: 700;
+}
+.general__text {
+  font-size: 16px;
+  color: #545454;
+  font-weight: 500;
+}
+/*************************************************************** header  */
+.header {
+  z-index: 1000;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 0;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__menu {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-right: 50px;
+}
+.nav__menu-item {
+  margin-right: 27px;
+}
+.nav__menu-item:last-child {
+  margin-right: 0px;
+}
+.nav__menu-item a {
+  text-decoration: none;
+  color: #2f281e;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.2s linear;
+}
+.nav__menu-item a:hover {
+  color: #ff9900;
+}
+.nav__button a {
+  padding: 10px 24px;
+}
+.nav__button a:first-child {
+  margin-right: 14px;
+}
+/*************************************************************** button  */
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 4px;
+  border: 0;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+.btn--blue {
+  border: 0.5px solid #bcd0e5;
+  color: #173a56;
+}
+.btn--blue:hover {
+  background: #bcd0e5;
+}
+.btn--yellow {
+  background: #ff9900;
+  color: #fff;
+}
+.btn--yellow:hover {
+  background: #ffbb00;
+}
+.btn--video {
+  background: url("/img/videoButton.png") no-repeat;
+  background-position: 15px;
+}
+.btn--video:hover {
+  text-decoration: underline;
+}
+/*************************************************************** intro  */
+.intro {
+  margin-top: 30px;
+}
+.intro__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.intro__header {
+  font-size: 42px;
+  color: #2f281e;
+  font-weight: 700;
+}
+.intro__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 60px;
+  width: 40%;
+}
+.intro__text {
+  font-size: 18px;
+  color: #544837;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.intro__button {
+  margin-top: 45px;
+}
+.intro__button a {
+  padding: 15px 40px;
+}
+.intro__button a:last-child {
+  color: #ff9900;
+  margin-left: 15px;
+}
+.intro__img {
+  width: 50%;
+}
+/*************************************************************** tools  */
+.tools {
+  margin-top: 110px;
+}
+.tools__inner {
+  background: url("/img/tools/toolsBg.png") no-repeat center/ cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 90px;
+}
+.tools__header {
+  text-align: center;
+  width: 50%;
+}
+.tools__info {
+  display: flex;
+  margin-top: 55px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  width: 25%;
+}
+.box__header {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2f281e;
+  margin-top: 30px;
+}
+.box__text {
+  font-size: 18px;
+  margin-top: 15px;
+}
+.tools__button {
+  margin-top: 35px;
+}
+.tools__button a {
+  padding: 15px 30px;
+}
+/*************************************************************** staff  */
+.staff {
+  margin-top: 120px;
+}
+.staff__info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.staff__info:first-child {
+  margin-top: 0;
+}
+.staff__info:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.person {
+  width: 40%;
+  margin-right: 100px;
+}
+.staff__info:nth-child(2) .person {
+  margin-right: 0;
+  margin-left: 100px;
+}
+.person__subHeader {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2f281e;
+  margin-top: 25px;
+}
+.person__text {
+  margin-top: 12px;
+}
+.person__checkText {
+  margin-top: 30px;
+  padding-left: 90px;
+  background: url("/img/staff/check.png") no-repeat;
+  background-position: 0 5px;
+}
+.staff__info-img {
+  width: 50%;
+}
+/*************************************************************** contact  */
+.contact {
+  margin-top: 100px;
+}
+.contact-bg {
+  background: url("/img/contact-bg.png") center no-repeat;
+}
+.contact__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 250px 0 150px 0;
+  background: url("/img/contact.png") center no-repeat;
+}
+.contact__text {
+  margin-top: 25px;
+  width: 50%;
+}
+.contact__button {
+  margin-top: 45px;
+}
+.contact__button a {
+  padding: 15px 30px;
+}
+/*************************************************************** marketing  */
+.marketing {
+  margin-top: 150px;
+}
+.marketing__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.marketing__header {
+  font-size: 34px;
+  font-weight: 700;
+  color: #2f281e;
+}
+.marketing__text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #544837;
+}
+.marketing__info {
+  margin-top: 55px;
+}
+.blog {
+  width: 33.33333%;
+}
+.blog__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #544837;
+  margin-top: 25px;
+}
+.blog__header {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2f281e;
+  margin-top: 10px;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.dot--active {
+  background: #ff9900;
+}
+
+/*************************************************************** footer  */
+.footer {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__link-header {
+  font-size: 20px;
+  color: #2f281e;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: text;
+}
+
+.footer__link-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.footer__link-links a {
+  text-decoration: none;
+  color: #544837;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.2s linear;
+}
+.footer__link-links a:hover {
+  color: #ff9900;
+}
+.footer__info {
+  width: 25%;
+}
+.footer__info-form {
+  margin-top: 35px;
+}
+.footer__info-form input[type="text"] {
+  padding: 10px 15px;
+  border: #bcd0e5;
+  outline: none;
+}
+.footer__info-button {
+  margin-top: 20px;
+}
+.footer__info-button a {
+  padding: 7px 15px;
+}
+::-webkit-input-placeholder {
+  color: #bcd0e5;
+}
+
+@media (max-width: 993px) {
+  .container {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  /*************************************************************** intro  */
+  .intro__info {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    width: 100%;
+  }
+  .intro__img {
+    width: 100%;
+    text-align: center;
+  }
+  /*************************************************************** staff  */
+  .staff__info:first-child {
+    margin-top: 0;
+  }
+  .person {
+    width: 100%;
+    margin-right: 0;
+  }
+  .staff__info:nth-child(2) .person {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .person__text {
+    margin-top: 12px;
+  }
+  .person__checkText {
+    min-height: 50px;
+  }
+  .staff__info-img {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+  /*************************************************************** contact  */
+  .contact__inner {
+    padding: 150px 0 150px 0;
+    background: none;
+  }
+  /*************************************************************** marketing  */
+  .marketing__inner {
+    text-align: center;
+  }
+  .blog {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  /*************************************************************** tools  */
+  .box {
+    width: 50%;
+    margin-top: 30px;
+  }
+  /************************************************************************************************** responsive header   */
+  .wrapper {
+    transition: 0.5s;
+  }
+  .wrapper.active {
+    padding-top: 400px;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 90px;
+  }
+  .nav__menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__menu-item {
+    margin: 0 0 15px 0;
+  }
+  .nav__menu-item a {
+    font-size: 25px;
+  }
+  .nav__button {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__button a {
+    margin: 0 0 15px 0;
+    padding: 15px 20px;
+    text-align: center;
+    width: 80%;
+  }
+  .gamburger {
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+  }
+  .gamburger i {
+    display: block;
+    width: 30px;
+    height: 6px;
+    margin: 4px auto;
+    background: #222;
+  }
+  .show {
+    display: block;
+    animation: show 0.8s linear forwards;
+  }
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  /*************************************************************** intro  */
+  .intro__img img {
+    width: 450px;
+  }
+  /*************************************************************** tools  */
+  .box {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+  /*************************************************************** footer  */
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__logo {
+    width: 100%;
+  }
+  .footer__info {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  /*************************************************************** intro  */
+  .intro__img img {
+    width: 300px;
+  }
+  .intro__info {
+    text-align: center;
+  }
+  .intro__button a:last-child {
+    margin-left: 0;
+  }
+  /*************************************************************** tools  */
+  .tools__header {
+    width: 100%;
+  }
+  /*************************************************************** tools  */
+  .staff__info-img img {
+    width: 300px;
+  }
+  /*************************************************************** contact  */
+  .contact__inner {
+    padding: 100px 0 50px 0;
+  }
+  .contact__text {
+    width: 100%;
+  }
+  /*************************************************************** marketing  */
+  .blog__img img {
+    width: 300px;
+  }
+}
